@@ -4,9 +4,9 @@
  *
  * @package silverstripe-newsletter-keywords
  */
-class NewsletterKeywordsExtension extends DataObjectDecorator {
+class NewsletterKeywordsExtension extends DataExtension {
 
-	public function updateCMSFields(FieldSet $fields) {
+	public function updateCMSFields(FieldList $fields) {
 		Requirements::css('newsletter-keywords/css/NewsletterKeywordsAdmin.css');
 
 		$keywords = $this->getKeywordReplacements();
